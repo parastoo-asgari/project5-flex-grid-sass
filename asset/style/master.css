@@ -1,0 +1,437 @@
+main {
+  width: 100%;
+  height: auto;
+}
+main .head {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../image/18.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  z-index: 1;
+}
+main .head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.6;
+}
+main .head > header {
+  width: 90%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+  margin: 0 auto;
+}
+main .head > header > .logo {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  padding-left: 60px;
+  transition: 0.6s;
+  font-family: "Bacasime Antique", serif;
+}
+main .head > header > .logo:hover {
+  letter-spacing: 7px;
+  color: gold;
+}
+main .head > header > nav {
+  width: 75%;
+}
+main .head > header > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .head > header > nav > ul > li {
+  width: 110px;
+}
+main .head > header > nav > ul > li > a {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.7s;
+  font-family: "Lato", sans-serif;
+}
+main .head > header > nav > ul > li > a:hover {
+  border-bottom: 2px solid gold;
+}
+main .head > .main-head {
+  width: 60%;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 150px auto;
+}
+main .head > .main-head > h1 {
+  font-size: 70px;
+  color: white;
+  font-family: "Bacasime Antique", serif;
+}
+main .head > .main-head > p {
+  color: white;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+main .head > .main-head > span {
+  font-size: 50px;
+  color: white;
+  margin: 100px auto;
+  cursor: pointer;
+}
+main .about-grid {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: 300px repeat(2, 450px);
+  gap: 10px 10px;
+  padding: 100px 50px;
+}
+main .about-grid > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(43, 42, 42);
+}
+main .about-grid > div:nth-of-type(1) {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+}
+main .about-grid > div:nth-of-type(1) > h2 {
+  font-size: 45px;
+  font-family: "Bacasime Antique", serif;
+}
+main .about-grid > div:nth-of-type(2) {
+  grid-row: 1/span 1;
+  grid-column: 2/span 1;
+}
+main .about-grid > div:nth-of-type(2) > p {
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  color: #575555;
+}
+main .about-grid > div:nth-of-type(2) > p:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+main .about-grid > div:nth-of-type(3) {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+}
+main .about-grid > div:nth-of-type(3) > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .about-grid > div:nth-of-type(4) {
+  grid-row: 2/span 2;
+  grid-column: 2/span 1;
+}
+main .about-grid > div:nth-of-type(4) > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .about-grid > div:nth-of-type(5) {
+  grid-row: 3/span 1;
+  grid-column: 1/span 1;
+}
+main .about-grid > div:nth-of-type(5) > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .effective-marketing {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+}
+main .effective-marketing > .left {
+  width: 60%;
+  height: 500px;
+  background-image: url("../image/4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+main .effective-marketing > .left::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: black;
+  position: absolute;
+  opacity: 0.3;
+}
+main .effective-marketing > .left > * {
+  padding-left: 30px;
+}
+main .effective-marketing > .left > h2 {
+  margin-top: 250px;
+  font-size: 50px;
+  color: rgb(248, 224, 9);
+  font-family: "Bacasime Antique", serif;
+}
+main .effective-marketing > .left > p {
+  color: white;
+  font-size: 23px;
+  margin-top: 30px;
+  font-family: "Lato", sans-serif;
+}
+main .effective-marketing > .right {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .effective-marketing > .right > div {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .effective-marketing > .right > div > * {
+  padding-left: 30px;
+  color: white;
+}
+main .effective-marketing > .right > div > span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.712);
+  font-family: "Lora", serif;
+}
+main .effective-marketing > .right > div > p {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+main .speakers {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .speakers > h2 {
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px 40px;
+  font-family: "Bacasime Antique", serif;
+  color: #2e2e2e;
+}
+main .speakers > div {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px 40px;
+}
+main .speakers > div > .left-speakers {
+  width: 50%;
+  height: 600px;
+  display: flex;
+}
+main .speakers > div > .left-speakers > figure {
+  width: 65%;
+}
+main .speakers > div > .left-speakers > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+main .speakers > div > .left-speakers > figure > img:hover {
+  transform: translateX(-20px);
+}
+main .speakers > div > .left-speakers > h3 {
+  font-size: 33px;
+  padding-left: 30px;
+  margin-top: 30px;
+  color: rgb(61, 61, 61);
+  font-family: "Lora", serif;
+}
+main .speakers > div > .right-speakers {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .speakers > div > .right-speakers > figure {
+  width: 65%;
+}
+main .speakers > div > .right-speakers > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+main .speakers > div > .right-speakers > figure > img:hover {
+  transform: translateX(-20px);
+}
+main .speakers > div > .right-speakers > h3 {
+  margin-top: 550px;
+  font-size: 33px;
+  color: rgb(61, 61, 61);
+  padding-right: 30px;
+  font-family: "Lora", serif;
+}
+main .speakers .bottom-speakers {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+}
+main .speakers .bottom-speakers > figure {
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+main .speakers .bottom-speakers > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+main .speakers .bottom-speakers > figure > img:hover {
+  opacity: 0.9;
+}
+main .speakers .bottom-speakers > figure > figcaption {
+  width: 100%;
+  text-align: center;
+  bottom: 25px;
+  left: 0;
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  font-family: "Lora", serif;
+}
+main .conference {
+  width: 100%;
+  min-height: 400px;
+  background-color: black;
+  padding: 90px 30px;
+}
+main .conference > h2 {
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Bacasime Antique", serif;
+}
+main .conference .list-conference {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+main .conference .list-conference > div {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(36, 35, 35);
+}
+main .conference .list-conference > div > * {
+  color: rgb(231, 226, 226);
+  padding: 20px 30px;
+  font-size: 23px;
+}
+main .footer {
+  width: 100%;
+  min-height: 300px;
+  background-color: rgba(252, 247, 247, 0.897);
+  display: flex;
+  flex-wrap: wrap;
+}
+main .footer > .start-foot {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+main .footer > .start-foot > div {
+  width: 300px;
+  height: 250px;
+  margin: 40px auto;
+}
+main .footer > .start-foot > div:nth-of-type(4) {
+  margin-top: 60px;
+}
+main .footer > .start-foot > div > figure > img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 30px;
+  margin-left: 30px;
+  border-radius: 10px 30px 10px 40px;
+  cursor: pointer;
+}
+main .footer > .start-foot > div > ul {
+  width: 100%;
+  height: 100%;
+}
+main .footer > .start-foot > div > ul > li {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+main .footer > .start-foot > div > ul > li > a {
+  font-size: 16px;
+  color: #111111;
+  font-weight: bold;
+  padding-left: 40px;
+  transition: 0.6s;
+}
+main .footer > .start-foot > div > ul > li > a:hover {
+  color: gold;
+}
+main .footer > .start-foot > div > ul > h3 {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+main .footer > .start-foot > div > ul > h4 {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  margin-top: 15px;
+}
+main .footer .end-foot {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .footer .end-foot > p {
+  font-size: 25px;
+  color: #7c6f27;
+  font-weight: bold;
+}/*# sourceMappingURL=master.css.map */
